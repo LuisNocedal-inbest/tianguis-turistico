@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#e9ebe3; font-family:Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#c42b73; text-decoration:none; }
+  a:hover { color:#2f2f31; }
+</style>
+</helmet>
+
+<section style="padding:64px 64px 120px; display:flex; flex-direction:column; gap:48px;">
+
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px; flex-wrap:wrap; max-width:1600px;">
+    <div style="display:flex; flex-direction:column; gap:14px; max-width:640px;">
+      <div style="font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; color:#7f7f7f;">Entrega 1 · Maqueta hi-fi · iPhone 15 (390 × 844)</div>
+      <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:38px; line-height:44px; color:#333333;">Tianguis Turístico México 2026</div>
+      <div style="font-family:Inter,sans-serif; font-size:18px; line-height:23px; color:#7f7f7f; text-wrap:pretty;">App oficial del evento. Acceso anónimo a secciones públicas y acceso participante a gafete, agenda y notificaciones. Secciones informativas armadas por bloques desde CMS.</div>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <div style="width:44px; height:44px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }};"></div>
+      <div style="width:44px; height:44px; border-radius:100px; background:#ffffff; border:1px solid #bbbbb6;"></div>
+      <div style="width:44px; height:44px; border-radius:100px; background:#e9ebe3;"></div>
+      <div style="width:44px; height:44px; border-radius:100px; background:#dadbd1;"></div>
+      <div style="width:44px; height:44px; border-radius:100px; background:#2f2f31;"></div>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:64px 56px;">
+
+    <!-- 01 SPLASH -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">01 · Splash</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:{{ splashBg }}; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px;">
+        <div style="position:absolute; top:0; left:0; right:0; height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:16px;">
+          <div style="width:120px; height:120px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 80px rgba(196,43,115,0.25);">
+            <div style="width:46px; height:46px; border-radius:100px; border:6px solid #c42b73;"></div>
+          </div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:700; font-size:26px; letter-spacing:2px; text-transform:uppercase; color:#333333;">Creaturismo</div>
+          <div style="width:52px; height:1px; background:#bbbbb6;"></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:16px; letter-spacing:0.5px; text-transform:uppercase; color:#c42b73;">Tianguis Turístico 2026</div>
+        </div>
+        <div style="position:absolute; bottom:110px; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:18px;">
+          <div style="width:120px; height:3px; border-radius:100px; background:#dadbd1; overflow:hidden;"><div style="width:64px; height:3px; border-radius:100px; background:{{ barBg }};"></div></div>
+          <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Acapulco, Guerrero · 26–29 abril</div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+      <div style="font-family:Inter,sans-serif; font-size:12px; line-height:18px; color:#7f7f7f;">Sustituir el círculo por el logotipo oficial de la edición cuando se libere.</div>
+    </div>
+
+    <!-- 02 HOME ANÓNIMO -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">02 · Home — visitante anónimo</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:714px; overflow:hidden; display:flex; flex-direction:column; gap:22px; padding:14px 20px 0;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:34px; height:34px; border-radius:100px; border:4px solid #c42b73;"></div>
+              <div style="display:flex; flex-direction:column;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:700; font-size:14px; letter-spacing:1.2px; text-transform:uppercase; color:#333333;">Creaturismo</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">Tianguis Turístico México 2026</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <div style="display:flex; align-items:center; gap:6px; height:30px; padding:0 12px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; letter-spacing:0.5px; color:#333333;">ES</div>
+              <div style="width:30px; height:30px; border-radius:100px; background:#ecedec; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M12 20.5a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.8a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.8 18.2c.8-2.1 2.8-3.2 5.2-3.2s4.4 1.1 5.2 3.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:10px; height:48px; padding:0 18px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06);">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M17 17l3.5 3.5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div style="font-family:Inter,sans-serif; font-size:14px; color:#7f7f7f;">Buscar una función o sección…</div>
+          </div>
+
+          <div style="position:relative; border-radius:20px; background:{{ heroBg }}; padding:20px 22px; overflow:hidden; box-shadow:{{ heroShadow }};">
+            <div style="position:absolute; top:-46px; right:-26px; width:150px; height:150px; border-radius:100px; background:rgba(255,255,255,0.12);"></div>
+            <div style="position:absolute; bottom:-60px; right:40px; width:110px; height:110px; border-radius:100px; background:rgba(255,255,255,0.08);"></div>
+            <div style="position:relative; display:flex; align-items:center; justify-content:space-between; gap:14px;">
+              <div style="display:flex; flex-direction:column; gap:8px; max-width:210px;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:19px; line-height:24px; color:#ffffff; text-wrap:pretty;">Tu gafete y tus citas, en un solo lugar</div>
+                <div style="font-family:Inter,sans-serif; font-size:12px; line-height:17px; color:rgba(255,255,255,0.8);">Estás navegando como visitante.</div>
+              </div>
+              <div style="height:38px; padding:0 18px; border-radius:19px; background:#ffffff; display:flex; align-items:center; justify-content:center; flex:none; font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:#c42b73;">Entrar</div>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px 10px;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M4 9h16" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Programa</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M12 21s6.5-5.4 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.6 12 21 12 21Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 13a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Destino</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M3.5 19V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 12.5h11.5a5 5 0 0 1 5 5V19" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 19h17" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.8 10.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Hoteles</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M5 11.5V19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 9.5 5 4.8a1 1 0 0 1 1-.7h12a1 1 0 0 1 1 .7l1.5 4.7a2.7 2.7 0 0 1-5.3 0 2.7 2.7 0 0 1-5.4 0 2.7 2.7 0 0 1-5.3 0Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Expositores</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px; opacity:0.55;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ecedec; display:flex; align-items:center; justify-content:center; position:relative;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#7f7f7f; text-align:center;">Gafete</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px; opacity:0.55;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ecedec; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M9.2 11.4a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19.5c0-3.3 2.8-5.3 6.2-5.3s6.2 2 6.2 5.3" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.8 5.4a3.4 3.4 0 0 1 0 6.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.4 14.6c2.2.7 3.6 2.4 3.6 4.9" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#7f7f7f; text-align:center;">Citas</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M4 4.5h10.5a1 1 0 0 1 1 1v14H5a1 1 0 0 1-1-1v-14Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 8.5H19a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-3.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 8h5.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 11.5h5.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 15h5.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Prensa</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M6 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Más</div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Patrocinadores</div>
+              <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Ver todos</div>
+            </div>
+            <div style="display:flex; gap:12px;">
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+            </div>
+          </div>
+
+          <div style="height:88px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.5px; color:#7f7f7f;">banner publicitario 320×100</div>
+
+          <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f; text-align:center;">Aviso de privacidad · Términos</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 03 HOME LOGUEADO -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">03 · Home — participante logueado</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:714px; overflow:hidden; display:flex; flex-direction:column; gap:22px; padding:14px 20px 0;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="width:34px; height:34px; border-radius:100px; border:4px solid #c42b73;"></div>
+              <div style="display:flex; flex-direction:column;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:700; font-size:14px; letter-spacing:1.2px; text-transform:uppercase; color:#333333;">Creaturismo</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">Tianguis Turístico México 2026</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <div style="display:flex; align-items:center; gap:6px; height:30px; padding:0 12px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; letter-spacing:0.5px; color:#333333;">ES</div>
+              <div style="width:30px; height:30px; border-radius:100px; background:{{ pillBg }}; color:#ffffff; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px;">MR</div>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:10px; height:48px; padding:0 18px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06);">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M17 17l3.5 3.5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div style="font-family:Inter,sans-serif; font-size:14px; color:#7f7f7f;">Buscar una función o sección…</div>
+          </div>
+
+          <div style="position:relative; border-radius:20px; background:{{ heroBg }}; padding:20px 22px; overflow:hidden; box-shadow:{{ heroShadow }};">
+            <div style="position:absolute; top:-40px; right:-30px; width:150px; height:150px; border-radius:100px; background:rgba(255,255,255,0.12);"></div>
+            <div style="position:absolute; bottom:-56px; right:34px; width:110px; height:110px; border-radius:100px; background:rgba(255,255,255,0.08);"></div>
+            <div style="position:relative; display:flex; align-items:center; justify-content:space-between; gap:14px;">
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                <div style="font-family:Inter,sans-serif; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.75);">Próxima cita · 11:30</div>
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:19px; line-height:24px; color:#ffffff;">Grupo Xcaret</div>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:rgba(255,255,255,0.18); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#ffffff;">Stand B-24</div>
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:rgba(255,255,255,0.18); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#ffffff;">25 min</div>
+                </div>
+              </div>
+              <div style="width:40px; height:40px; border-radius:100px; background:#ffffff; display:flex; align-items:center; justify-content:center; flex:none;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M9.5 6 15 12l-5.5 6" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+            </div>
+          </div>
+
+
+          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px 10px;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M4 9h16" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Programa</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M12 21s6.5-5.4 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.6 12 21 12 21Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 13a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Destino</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M3.5 19V6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 12.5h11.5a5 5 0 0 1 5 5V19" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 19h17" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.8 10.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Hoteles</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M5 11.5V19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 9.5 5 4.8a1 1 0 0 1 1-.7h12a1 1 0 0 1 1 .7l1.5 4.7a2.7 2.7 0 0 1-5.3 0 2.7 2.7 0 0 1-5.4 0 2.7 2.7 0 0 1-5.3 0Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Expositores</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#fff8fb; border:1px solid #c42b73; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Gafete</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M9.2 11.4a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8Z" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19.5c0-3.3 2.8-5.3 6.2-5.3s6.2 2 6.2 5.3" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.8 5.4a3.4 3.4 0 0 1 0 6.4" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.4 14.6c2.2.7 3.6 2.4 3.6 4.9" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Citas</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; position:relative;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:22px; height:22px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="position:absolute; top:10px; right:12px; width:9px; height:9px; border-radius:100px; background:#c42b73; border:2px solid #ffffff;"></div></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Avisos</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="width:66px; height:66px; border-radius:20px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px; flex:none;"><path d="M6 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18 12h.01" fill="none" stroke="#333333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; line-height:14px; color:#333333; text-align:center;">Más</div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Patrocinadores</div>
+              <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Ver todos</div>
+            </div>
+            <div style="display:flex; gap:12px;">
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+              <div style="width:104px; height:64px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:9px; color:#7f7f7f;">logo</div>
+            </div>
+          </div>
+
+          <div style="height:88px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.5px; color:#7f7f7f;">banner publicitario 320×100</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px; position:relative;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="position:absolute; top:-3px; right:8px; width:8px; height:8px; border-radius:100px; background:#c42b73;"></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 04 LOGIN -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">04 · Login</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:34px 28px 0; display:flex; flex-direction:column; gap:30px;">
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="width:52px; height:52px; border-radius:100px; border:6px solid #c42b73;"></div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Iniciar sesión</div>
+            <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-wrap:pretty;">Accede con el correo con el que te registraste al Tianguis Turístico 2026.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#333333;">Correo electrónico</div>
+              <div style="height:52px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; padding:0 16px; font-family:Inter,sans-serif; font-size:14px; color:#333333;">maria.ruiz@visitmexico.mx</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#333333;">Contraseña</div>
+              <div style="height:52px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.10); display:flex; align-items:center; justify-content:space-between; padding:0 16px; font-family:Inter,sans-serif; font-size:16px; letter-spacing:3px; color:#333333;">
+                <div>••••••••</div>
+                <div style="font-family:Inter,sans-serif; font-size:12px; letter-spacing:0; color:#7f7f7f;">Mostrar</div>
+              </div>
+            </div>
+            <div style="font-family:Inter,sans-serif; font-size:13px; color:#ffffff; align-self:flex-start;">Olvidé mi contraseña</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="height:48px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Iniciar sesión</div>
+            <div style="height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Continuar sin cuenta</div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:36px; left:28px; right:28px; font-family:Inter,sans-serif; font-size:11px; line-height:16px; color:#7f7f7f; text-align:center;">Al continuar aceptas el <span style="color:#333333; text-decoration:underline;">aviso de privacidad</span>.</div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 05 LOGIN ERROR -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">05 · Login — estado de error</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:34px 28px 0; display:flex; flex-direction:column; gap:30px;">
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="width:52px; height:52px; border-radius:100px; border:6px solid #c42b73;"></div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Iniciar sesión</div>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:10px; padding:14px 16px; border-radius:10px; background:#fff8fb; border:1px solid #c42b73;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 7.5v5" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 15.8v.4" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#333333; text-wrap:pretty;">Correo o contraseña incorrectos. Te quedan 4 intentos antes de bloquear el acceso.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#333333;">Correo electrónico</div>
+              <div style="height:52px; border-radius:10px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; padding:0 16px; font-family:Inter,sans-serif; font-size:14px; color:#333333;">maria.ruiz@visitmexico.mx</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#ffffff;">Contraseña</div>
+              <div style="height:52px; border-radius:10px; background:#ffffff; border:1px solid #c42b73; display:flex; align-items:center; justify-content:space-between; padding:0 16px; font-family:Inter,sans-serif; font-size:16px; letter-spacing:3px; color:#333333;">
+                <div>••••••</div>
+                <div style="font-family:Inter,sans-serif; font-size:12px; letter-spacing:0; color:#7f7f7f;">Mostrar</div>
+              </div>
+              <div style="font-family:Inter,sans-serif; font-size:12px; color:#ffffff;">Revisa tu contraseña</div>
+            </div>
+            <div style="font-family:Inter,sans-serif; font-size:13px; color:#ffffff; align-self:flex-start;">Olvidé mi contraseña</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="height:48px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Iniciar sesión</div>
+            <div style="height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Continuar sin cuenta</div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 06 MODAL REQUIERE SESIÓN -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">06 · Modal “requiere sesión”</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333; opacity:0.35;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:14px 20px; display:flex; flex-direction:column; gap:22px; opacity:0.3;">
+          <div style="height:48px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06);"></div>
+          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px 10px;">
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+            <div style="height:66px; border-radius:20px; background:#ffffff;"></div>
+          </div>
+        </div>
+        <div style="position:absolute; inset:0; background:rgba(47,47,49,0.45); display:flex; align-items:center; justify-content:center; padding:0 26px;">
+          <div style="width:100%; background:#ffffff; border-radius:20px; padding:30px 26px 24px; display:flex; flex-direction:column; align-items:center; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+            <div style="width:56px; height:56px; border-radius:100px; background:#fff8fb; display:flex; align-items:center; justify-content:center;">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:26px; height:26px; flex:none;"><path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.5 10.5h11a1 1 0 0 1 1 1v7.5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V11.5a1 1 0 0 1 1-1Z" fill="none" stroke="#c42b73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:20px; line-height:26px; color:#333333; text-align:center;">Necesitas iniciar sesión</div>
+            <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-align:center; text-wrap:pretty;">Tu gafete, tus citas y tus notificaciones son exclusivos de participantes registrados.</div>
+            <div style="width:100%; display:flex; flex-direction:column; gap:10px; margin-top:6px;">
+              <div style="height:46px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Ir a iniciar sesión</div>
+              <div style="height:46px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Cancelar</div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#ffffff; opacity:0.5;"></div>
+      </div>
+    </div>
+
+    <!-- 07 GAFETE -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">07 · Gafete digital</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Mi gafete</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:22px 26px 0; display:flex; flex-direction:column; align-items:center; gap:26px;">
+          <div style="width:100%; background:#ffffff; border-radius:20px; padding:32px 26px 34px; display:flex; flex-direction:column; align-items:center; gap:26px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#ffffff;">Comprador</div>
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:26px; line-height:32px; letter-spacing:0.5px; text-transform:uppercase; color:#333333; text-align:center;">María Ruiz Salazar</div>
+              <div style="font-family:Inter,sans-serif; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#7f7f7f; text-align:center;">Viajes Panorama · México</div>
+            </div>
+            <div style="position:relative; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute; width:180px; height:180px; border-radius:100px; background:{{ glowBg }}; box-shadow:0 10px 80px rgba(196,43,115,0.5);"></div>
+              <div style="position:relative; width:216px; height:216px; border-radius:10px; background:#ffffff; padding:14px; display:flex; align-items:center; justify-content:center;">
+                <div style="width:100%; height:100%; background-image:repeating-linear-gradient(90deg,#2f2f31 0 7px,transparent 7px 14px),repeating-linear-gradient(0deg,#2f2f31 0 7px,transparent 7px 14px); background-blend-mode:multiply; opacity:0.85; position:relative;">
+                  <div style="position:absolute; top:0; left:0; width:46px; height:46px; border:8px solid #2f2f31; background:#ffffff;"></div>
+                  <div style="position:absolute; top:0; right:0; width:46px; height:46px; border:8px solid #2f2f31; background:#ffffff;"></div>
+                  <div style="position:absolute; bottom:0; left:0; width:46px; height:46px; border:8px solid #2f2f31; background:#ffffff;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+              <div style="font-family:ui-monospace,Menlo,monospace; font-size:13px; letter-spacing:2px; color:#333333;">TT26-BY-04871</div>
+              <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Válido 26–29 abril · Acapulco</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:10px; width:100%;">
+            <div style="flex:1; height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Brillo máximo</div>
+            <div style="flex:1; height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Añadir a Wallet</div>
+          </div>
+          <div style="font-family:Inter,sans-serif; font-size:12px; line-height:18px; color:#7f7f7f; text-align:center;">Muestra este código en accesos y en tus citas de negocios.</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 08 AGENDA -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">08 · Agenda de citas</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:8px 20px 0; display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Mis citas</div>
+            <div style="width:44px; height:44px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 8.5v-3a1.5 1.5 0 0 1 1.5-1.5h3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 4h3A1.5 1.5 0 0 1 20 5.5v3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 15.5v3a1.5 1.5 0 0 1-1.5 1.5h-3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 20h-3A1.5 1.5 0 0 1 4 18.5v-3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.5 12h11" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#333333; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#fdfcf7;">Lun 27</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Mar 28</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Mié 29</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:18px; color:#333333;">09:00</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">25 min</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Ana Belmont</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Riviera Nayarit CVB</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:3px;">
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Stand A-12</div>
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:{{ okBg }}; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:{{ okText }};">Confirmada</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:18px; color:#333333;">11:30</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">25 min</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Luis Ferrer</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Grupo Xcaret</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:3px;">
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Stand B-24</div>
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:{{ okBg }}; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:{{ okText }};">Confirmada</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:18px; color:#333333;">13:15</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">25 min</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Sofía Domínguez</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Hoteles Mundo Maya</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:3px;">
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Stand D-03</div>
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:{{ warnBg }}; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:{{ warnText }};">Por confirmar</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:18px; color:#333333;">16:40</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">25 min</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Tomás Aguirre</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Secretaría de Turismo BCS</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:3px;">
+                  <div style="height:24px; padding:0 10px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Stand C-31</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 09 AGENDA VACÍA -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">09 · Agenda — estado vacío</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:8px 20px 0; display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Mis citas</div>
+            <div style="width:44px; height:44px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 8.5v-3a1.5 1.5 0 0 1 1.5-1.5h3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 4h3A1.5 1.5 0 0 1 20 5.5v3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 15.5v3a1.5 1.5 0 0 1-1.5 1.5h-3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 20h-3A1.5 1.5 0 0 1 4 18.5v-3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.5 12h11" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#333333; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#fdfcf7;">Lun 27</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Mar 28</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Mié 29</div>
+          </div>
+        </div>
+        <div style="position:absolute; top:300px; left:44px; right:44px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+          <div style="width:76px; height:76px; border-radius:20px; background:#e9ebe3; display:flex; align-items:center; justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:32px; height:32px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:20px; line-height:26px; color:#333333; text-align:center;">Sin citas este día</div>
+          <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-align:center; text-wrap:pretty;">Tus citas confirmadas en el sistema de negocios aparecerán aquí automáticamente.</div>
+          <div style="height:46px; padding:0 30px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333; margin-top:4px;">Escanear un gafete</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 10 ESCÁNER -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">10 · Escáner QR</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#2f2f31; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="position:absolute; inset:0; background:repeating-linear-gradient(160deg,#3a3a3d,#3a3a3d 22px,#333336 22px,#333336 44px);"></div>
+        <div style="position:absolute; top:0; left:0; right:0; height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#eeede9;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #eeede9;"></div>
+          </div>
+        </div>
+        <div style="position:absolute; top:54px; left:0; right:0; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+          <div style="width:34px; height:34px; border-radius:100px; border:1px solid rgba(238,237,233,0.4); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#eeede9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#eeede9;">Escanear gafete</div>
+          <div style="width:34px; height:34px; border-radius:100px; border:1px solid rgba(238,237,233,0.4); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M4.5 12a7.5 7.5 0 0 1 12.8-5.3" fill="none" stroke="#eeede9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.5 12a7.5 7.5 0 0 1-12.8 5.3" fill="none" stroke="#eeede9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.5 3.2v3.7h-3.7" fill="none" stroke="#eeede9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.5 20.8v-3.7h3.7" fill="none" stroke="#eeede9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="position:absolute; top:250px; left:65px; width:260px; height:260px; border-radius:20px;">
+          <div style="position:absolute; top:0; left:0; width:56px; height:56px; border-top:4px solid #c42b73; border-left:4px solid #c42b73; border-radius:20px 0 0 0;"></div>
+          <div style="position:absolute; top:0; right:0; width:56px; height:56px; border-top:4px solid #c42b73; border-right:4px solid #c42b73; border-radius:0 20px 0 0;"></div>
+          <div style="position:absolute; bottom:0; left:0; width:56px; height:56px; border-bottom:4px solid #c42b73; border-left:4px solid #c42b73; border-radius:0 0 0 20px;"></div>
+          <div style="position:absolute; bottom:0; right:0; width:56px; height:56px; border-bottom:4px solid #c42b73; border-right:4px solid #c42b73; border-radius:0 0 20px 0;"></div>
+          <div style="position:absolute; top:126px; left:14px; right:14px; height:2px; background:{{ pillBg }}; box-shadow:{{ pillShadow }};"></div>
+        </div>
+        <div style="position:absolute; top:540px; left:44px; right:44px; font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#eeede9; text-align:center; text-wrap:pretty;">Alinea el código QR del gafete dentro del marco.</div>
+        <div style="position:absolute; bottom:120px; left:26px; right:26px; display:flex; gap:10px;">
+          <div style="flex:1; height:48px; border-radius:19px; background:rgba(238,237,233,0.16); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#eeede9;">Linterna</div>
+          <div style="flex:1; height:48px; border-radius:19px; background:rgba(238,237,233,0.16); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#eeede9;">Código manual</div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#eeede9; opacity:0.5;"></div>
+      </div>
+    </div>
+
+    <!-- 11 ESCÁNER ÉXITO -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">11 · Escáner — éxito</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#2f2f31; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="position:absolute; inset:0; background:repeating-linear-gradient(160deg,#3a3a3d,#3a3a3d 22px,#333336 22px,#333336 44px);"></div>
+        <div style="position:absolute; top:0; left:0; right:0; height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#eeede9;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #eeede9;"></div>
+          </div>
+        </div>
+        <div style="position:absolute; top:230px; left:65px; width:260px; height:260px; border-radius:20px; border:4px solid #c42b73; box-shadow:0 10px 80px rgba(196,43,115,0.5); display:flex; align-items:center; justify-content:center;">
+          <div style="width:80px; height:80px; border-radius:100px; background:{{ pillBg }}; display:flex; align-items:center; justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:38px; height:38px; flex:none;"><path d="M5 12.5 9.8 17.5 19 7" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; background:#ffffff; border-radius:20px 20px 44px 44px; padding:26px 26px 30px; display:flex; flex-direction:column; gap:18px;">
+          <div style="width:44px; height:4px; border-radius:100px; background:#dadbd1; align-self:center;"></div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#ffffff;">Gafete válido</div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:22px; line-height:28px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Luis Ferrer Ontiveros</div>
+            <div style="font-family:Inter,sans-serif; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#7f7f7f;">Grupo Xcaret · Expositor</div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <div style="height:28px; padding:0 12px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Stand B-24</div>
+            <div style="height:28px; padding:0 12px; border-radius:100px; background:#e9ebe3; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#333333;">Cita 11:30</div>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <div style="flex:1; height:48px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Registrar cita</div>
+            <div style="flex:1; height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Seguir escaneando</div>
+          </div>
+          <div style="width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25; align-self:center;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 ESCÁNER ERROR -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">12 · Escáner — error</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#2f2f31; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="position:absolute; inset:0; background:repeating-linear-gradient(160deg,#3a3a3d,#3a3a3d 22px,#333336 22px,#333336 44px);"></div>
+        <div style="position:absolute; top:0; left:0; right:0; height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#eeede9;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#eeede9;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #eeede9;"></div>
+          </div>
+        </div>
+        <div style="position:absolute; top:230px; left:65px; width:260px; height:260px; border-radius:20px; border:4px dashed rgba(238,237,233,0.5); display:flex; align-items:center; justify-content:center;">
+          <div style="width:80px; height:80px; border-radius:100px; border:4px solid #eeede9; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:34px; color:#eeede9;">!</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; background:#ffffff; border-radius:20px 20px 44px 44px; padding:26px 26px 30px; display:flex; flex-direction:column; gap:16px;">
+          <div style="width:44px; height:4px; border-radius:100px; background:#dadbd1; align-self:center;"></div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:20px; line-height:26px; color:#333333;">No pudimos leer el gafete</div>
+            <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-wrap:pretty;">El código no corresponde a esta edición o está dañado. Intenta de nuevo o captura el folio manualmente.</div>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <div style="flex:1; height:48px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Reintentar</div>
+            <div style="flex:1; height:48px; border-radius:19px; background:#ecedec; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#333333;">Código manual</div>
+          </div>
+          <div style="width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25; align-self:center;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 NOTIFICACIONES -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">13 · Notificaciones</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:8px 20px 0; display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Avisos</div>
+              <div style="height:22px; min-width:22px; padding:0 7px; border-radius:100px; background:{{ pillBg }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:11px; color:#ffffff;">3</div>
+            </div>
+            <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Marcar leídas</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="background:#ffffff; border-radius:20px; padding:16px 18px; display:flex; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:8px; height:8px; border-radius:100px; background:#c42b73; margin-top:6px; flex:none;"></div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">Cita reprogramada</div>
+                  <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f; flex:none;">09:12</div>
+                </div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f; text-wrap:pretty;">Tu cita con Grupo Xcaret cambió a las 11:30 en el stand B-24.</div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:16px 18px; display:flex; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:8px; height:8px; border-radius:100px; background:#c42b73; margin-top:6px; flex:none;"></div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">Inauguración oficial</div>
+                  <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f; flex:none;">08:40</div>
+                </div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f; text-wrap:pretty;">Comienza en 30 minutos en el Salón Pacífico. Acceso con gafete.</div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:16px 18px; display:flex; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:8px; height:8px; border-radius:100px; background:#c42b73; margin-top:6px; flex:none;"></div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">Nuevo material de prensa</div>
+                  <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f; flex:none;">Ayer</div>
+                </div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f; text-wrap:pretty;">Ya puedes descargar el kit de prensa de la edición 2026.</div>
+              </div>
+            </div>
+            <div style="background:#f6f5f0; border-radius:20px; padding:16px 18px; display:flex; gap:14px;">
+              <div style="width:8px; height:8px; border-radius:100px; background:#dadbd1; margin-top:6px; flex:none;"></div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:15px; color:#7f7f7f;">Transporte al recinto</div>
+                  <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f; flex:none;">Lun</div>
+                </div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f; text-wrap:pretty;">Rutas de shuttle desde hoteles sede, cada 20 minutos.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 14 NOTIF DETALLE + VACÍO -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">14 · Aviso — detalle</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid #dadbd1;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Aviso</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:26px 24px 0; display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <div style="height:24px; padding:0 10px; border-radius:100px; background:#fff8fb; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#c42b73;">Citas</div>
+              <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Hoy · 09:12</div>
+            </div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:26px; line-height:32px; color:#333333; text-wrap:pretty;">Tu cita con Grupo Xcaret cambió de horario</div>
+          </div>
+          <div style="font-family:Inter,sans-serif; font-size:14px; line-height:22px; color:#7f7f7f; text-wrap:pretty;">La cita programada para las 10:15 se movió a las 11:30 del lunes 27 de abril, en el stand B-24 del pabellón Quintana Roo. El expositor confirmó la asistencia de dos representantes.<br><br>Si no puedes asistir, cancela desde tu agenda antes de las 10:00 para liberar el espacio.</div>
+          <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; padding-right:16px; border-right:1px solid #dadbd1;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:18px; color:#333333;">11:30</div>
+              <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">25 min</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+              <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Luis Ferrer</div>
+              <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Grupo Xcaret · Stand B-24</div>
+            </div>
+          </div>
+          <div style="height:48px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Ver en mi agenda</div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 15 NOTIF VACÍO -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">15 · Avisos — estado vacío</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="padding:8px 20px 0;">
+          <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:34px; line-height:38px; color:#333333;">Avisos</div>
+        </div>
+        <div style="position:absolute; top:310px; left:44px; right:44px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+          <div style="width:76px; height:76px; border-radius:20px; background:#e9ebe3; display:flex; align-items:center; justify-content:center;">
+            <svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px; height:28px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:20px; line-height:26px; color:#333333; text-align:center;">Todo tranquilo por ahora</div>
+          <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-align:center; text-wrap:pretty;">Aquí llegarán los avisos del comité organizador y los cambios en tus citas.</div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; height:76px; background:#ffffff; border-top:1px solid #dadbd1; display:flex; align-items:center; justify-content:space-around; padding-bottom:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 10.6 12 4l8 6.6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.8 9.2V19a1 1 0 0 0 1 1H10v-5h4v5h3.2a1 1 0 0 0 1-1V9.2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Inicio</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M4 9h16" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 3.5V6" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 13h2" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16.5h5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Citas</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; flex:none;"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v14a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.7 16.8c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="font-family:Inter,sans-serif; font-size:10px; color:#7f7f7f;">Gafete</div></div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:4px;"><div style="width:38px; height:38px; border-radius:100px; background:{{ pillBg }}; box-shadow:{{ pillShadow }}; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-family:Inter,sans-serif; font-size:10px; color:#c42b73;">Avisos</div></div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 16 PROGRAMA -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">16 · Programa preliminar</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Programa</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:6px 20px 0; display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; background:{{ infoBg }};">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:16px; height:16px; flex:none;"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11v5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 7.8v.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div style="font-family:Inter,sans-serif; font-size:12px; line-height:17px; color:{{ infoText }};">Programa preliminar · sujeto a cambios</div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#333333; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#fdfcf7;">Dom 26</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Lun 27</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Mar 28</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:13px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">Domingo 26 de abril</div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:2px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">10:00</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">13:00</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; line-height:21px; color:#333333;">Acreditaciones y entrega de gafetes</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Vestíbulo principal · Expo Mundo Imperial</div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:2px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">16:00</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">17:30</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; line-height:21px; color:#333333;">Sesión informativa para compradores</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Salón Pacífico A</div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:2px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">20:00</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">23:00</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; line-height:21px; color:#333333;">Ceremonia de inauguración</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Foro Imperial · Acceso con gafete</div>
+              </div>
+            </div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:13px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f; margin-top:6px;">Lunes 27 de abril</div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; gap:16px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:2px; padding-right:16px; border-right:1px solid #dadbd1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">09:00</div>
+                <div style="font-family:Inter,sans-serif; font-size:11px; color:#7f7f7f;">18:00</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; line-height:21px; color:#333333;">Citas de negocios</div>
+                <div style="font-family:Inter,sans-serif; font-size:13px; color:#7f7f7f;">Piso de exposición</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 17 WEBVIEW LOADING -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">17 · WebView — cargando</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Sede y recinto</div>
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M12 15.5V4" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 7.5 12 4l3.5 3.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 13.5V19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="height:2px; background:#dadbd1;"><div style="width:38%; height:2px; background:{{ barBg }};"></div></div>
+        <div style="padding:26px 24px 0; display:flex; flex-direction:column; gap:16px;">
+          <div style="height:22px; width:70%; border-radius:5px; background:#e9ebe3;"></div>
+          <div style="height:200px; border-radius:20px; background:#e9ebe3;"></div>
+          <div style="height:14px; width:100%; border-radius:5px; background:#e9ebe3;"></div>
+          <div style="height:14px; width:92%; border-radius:5px; background:#e9ebe3;"></div>
+          <div style="height:14px; width:64%; border-radius:5px; background:#e9ebe3;"></div>
+          <div style="height:14px; width:88%; border-radius:5px; background:#e9ebe3; margin-top:10px;"></div>
+          <div style="height:14px; width:50%; border-radius:5px; background:#e9ebe3;"></div>
+        </div>
+        <div style="position:absolute; bottom:100px; left:20px; right:20px; height:88px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:10px; color:#7f7f7f;">banner de sección (si aplica)</div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 18 WEBVIEW ERROR -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">18 · WebView — sin conexión</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid #dadbd1;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Sede y recinto</div>
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:17px; height:17px; flex:none;"><path d="M12 15.5V4" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 7.5 12 4l3.5 3.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 13.5V19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="position:absolute; top:300px; left:44px; right:44px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+          <div style="width:76px; height:76px; border-radius:20px; background:#e9ebe3; display:flex; align-items:center; justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:34px; height:34px; flex:none;"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 7.5v5" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 15.8v.4" fill="none" stroke="#7f7f7f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:20px; line-height:26px; color:#333333; text-align:center;">No pudimos cargar esta sección</div>
+          <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f; text-align:center; text-wrap:pretty;">Revisa tu conexión a internet. El contenido se actualiza desde el sitio oficial del Tianguis.</div>
+          <div style="height:46px; padding:0 30px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff; margin-top:4px;">Reintentar</div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 19 BLOQUES CMS A -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">19 · Bloques CMS — texto, galería, video</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid #dadbd1;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Plantillas de bloque</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:22px 20px 0; display:flex; flex-direction:column; gap:22px;">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:ui-monospace,Menlo,monospace; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#c42b73;">bloque · texto enriquecido</div>
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:22px; line-height:28px; color:#333333;">Acapulco, sede 2026</div>
+            <div style="font-family:Inter,sans-serif; font-size:14px; line-height:22px; color:#7f7f7f; text-wrap:pretty;">El puerto recibe la edición 50 del Tianguis Turístico con más de 1,200 empresas expositoras. <span style="color:#c42b73;">Consulta la guía del destino</span>.</div>
+            <div style="display:flex; flex-direction:column; gap:6px; padding-left:16px; border-left:2px solid #dadbd1;">
+              <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f;">· Recinto: Expo Mundo Imperial</div>
+              <div style="font-family:Inter,sans-serif; font-size:14px; line-height:20px; color:#7f7f7f;">· 26 al 29 de abril de 2026</div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:ui-monospace,Menlo,monospace; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#c42b73;">bloque · imagen / galería</div>
+            <div style="height:180px; border-radius:20px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:10px; color:#7f7f7f;">foto destino 16:9</div>
+            <div style="display:flex; gap:8px;">
+              <div style="flex:1; height:64px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px);"></div>
+              <div style="flex:1; height:64px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px);"></div>
+              <div style="flex:1; height:64px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:Inter,sans-serif; font-size:12px; color:#333333;">+6</div>
+            </div>
+            <div style="font-family:Inter,sans-serif; font-size:12px; line-height:18px; color:#7f7f7f;">Pie de foto opcional editable desde el CMS.</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:ui-monospace,Menlo,monospace; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#c42b73;">bloque · embed vimeo</div>
+            <div style="height:196px; border-radius:20px; background:#2f2f31; display:flex; align-items:center; justify-content:center; position:relative;">
+              <div style="width:64px; height:64px; border-radius:100px; background:rgba(253,252,247,0.15); border:1px solid rgba(238,237,233,0.6); display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px; height:28px; flex:none;"><path d="M9 6.6v10.8L18 12 9 6.6Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </div>
+              <div style="position:absolute; bottom:14px; left:16px; font-family:ui-monospace,Menlo,monospace; font-size:10px; color:#eeede9;">vimeo · 02:14</div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 20 BLOQUES CMS B -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">20 · Bloques CMS — PDF, descargable</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid #dadbd1;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Plantillas de bloque</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:22px 20px 0; display:flex; flex-direction:column; gap:24px;">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:ui-monospace,Menlo,monospace; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#c42b73;">bloque · visor de PDF</div>
+            <div style="border-radius:20px; background:#ffffff; overflow:hidden; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="height:300px; background:#e9ebe3; display:flex; align-items:center; justify-content:center; padding:22px;">
+                <div style="width:170px; height:100%; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; flex-direction:column; gap:8px; padding:18px;">
+                  <div style="height:10px; width:70%; background:#e9ebe3;"></div>
+                  <div style="height:6px; width:100%; background:#e9ebe3;"></div>
+                  <div style="height:6px; width:94%; background:#e9ebe3;"></div>
+                  <div style="height:6px; width:88%; background:#e9ebe3;"></div>
+                  <div style="height:52px; width:100%; background:#e9ebe3; margin-top:6px;"></div>
+                  <div style="height:6px; width:96%; background:#e9ebe3;"></div>
+                  <div style="height:6px; width:72%; background:#e9ebe3;"></div>
+                </div>
+              </div>
+              <div style="height:52px; display:flex; align-items:center; justify-content:space-between; padding:0 18px; border-top:1px solid #dadbd1;">
+                <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Página 1 de 14</div>
+                <div style="display:flex; gap:8px;">
+                  <div style="width:32px; height:32px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:16px; height:16px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                  <div style="width:32px; height:32px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:16px; height:16px; flex:none;"><path d="M9.5 6 15 12l-5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-family:ui-monospace,Menlo,monospace; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#c42b73;">bloque · archivo descargable</div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; align-items:center; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:44px; height:52px; border-radius:5px; background:#ecedec; flex:none; display:flex; align-items:flex-end; justify-content:center; padding-bottom:6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:10px; letter-spacing:0.5px; color:#333333;">PDF</div>
+              <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; line-height:20px; color:#333333;">Kit de prensa 2026</div>
+                <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">PDF · 4.2 MB · ES / EN</div>
+              </div>
+              <div style="width:40px; height:40px; border-radius:100px; background:#ecedec; display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M12 4v11" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 11.5 12 15.5l4-4" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.5 19.5h15" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:18px; display:flex; align-items:center; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:44px; height:52px; border-radius:5px; background:#ecedec; flex:none; display:flex; align-items:flex-end; justify-content:center; padding-bottom:6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:10px; letter-spacing:0.5px; color:#333333;">XLS</div>
+              <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
+                <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; line-height:20px; color:#333333;">Directorio de expositores</div>
+                <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">XLSX · 880 KB</div>
+              </div>
+              <div style="width:40px; height:40px; border-radius:100px; background:#ecedec; display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M12 4v11" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 11.5 12 15.5l4-4" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.5 19.5h15" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+    <!-- 21 SECCIÓN COMPUESTA HOTELES -->
+    <div style="display:flex; flex-direction:column; gap:12px; width:390px;">
+      <div style="display:{{ captionDisplay }}; font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:#7f7f7f;">21 · Sección compuesta — Hoteles</div>
+      <div style="width:390px; height:844px; border-radius:44px; background:#ffffff; border:1px solid #bbbbb6; box-shadow:0 16px 33px rgba(0,0,0,0.05); overflow:hidden; position:relative;">
+        <div style="height:54px; display:flex; align-items:flex-end; justify-content:space-between; padding:0 28px 6px; font-family:'General Sans',sans-serif; font-weight:600; font-size:15px; color:#333333;">
+          <div>9:41</div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <div style="width:17px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:15px; height:11px; border-radius:2px; background:#333333;"></div>
+            <div style="width:24px; height:11px; border-radius:3px; border:1px solid #333333;"></div>
+          </div>
+        </div>
+        <div style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+          <div style="width:34px; height:34px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px; flex:none;"><path d="M14.5 6 9 12l5.5 6" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Hoteles sede</div>
+          <div style="width:34px;"></div>
+        </div>
+        <div style="padding:14px 20px 0; display:flex; flex-direction:column; gap:20px;">
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-family:'General Sans',sans-serif; font-weight:500; font-size:26px; line-height:32px; color:#333333;">Dónde hospedarte</div>
+            <div style="font-family:Inter,sans-serif; font-size:14px; line-height:21px; color:#7f7f7f; text-wrap:pretty;">Tarifas preferenciales para participantes acreditados, con transporte al recinto incluido.</div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#333333; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; font-weight:500; color:#fdfcf7;">Todos</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Zona Diamante</div>
+            <div style="height:32px; padding:0 16px; border-radius:100px; background:#ffffff; box-shadow:0 4px 12px rgba(47,47,49,0.06); display:flex; align-items:center; font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f;">Costera</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="background:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="height:170px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); display:flex; align-items:center; justify-content:center; font-family:ui-monospace,Menlo,monospace; font-size:10px; color:#7f7f7f;">foto hotel</div>
+              <div style="padding:16px 18px 18px; display:flex; flex-direction:column; gap:6px;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:17px; color:#333333;">Princess Mundo Imperial</div>
+                  <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f; flex:none;">1.2 km</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:6px;"><svg viewBox="0 0 24 24" fill="#c42b73" xmlns="http://www.w3.org/2000/svg" style="width:14px; height:14px; flex:none;"><path d="M12 4.2l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1L4.5 9.7l5.2-.8L12 4.2Z" fill="#c42b73"></path></svg><div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:13px; color:#333333;">4.9</div><div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f;">· Zona Diamante · Sede oficial</div></div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:6px;">
+                  <div style="height:26px; padding:0 11px; border-radius:100px; background:#fff8fb; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:#c42b73;">Tarifa evento</div>
+                  <div style="height:26px; padding:0 11px; border-radius:100px; background:{{ okBg }}; display:flex; align-items:center; font-family:Inter,sans-serif; font-size:11px; color:{{ okText }};">Shuttle</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#ffffff; border-radius:20px; padding:14px; display:flex; align-items:center; gap:14px; box-shadow:0 16px 33px rgba(0,0,0,0.05);">
+              <div style="width:84px; height:84px; border-radius:10px; background:repeating-linear-gradient(135deg,#e9ebe3,#e9ebe3 8px,#dadbd1 8px,#dadbd1 16px); flex:none;"></div>
+              <div style="display:flex; flex-direction:column; gap:5px; flex:1;">
+                <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+                  <div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:16px; color:#333333;">Banyan Tree Cabo Marqués</div>
+                  <div style="font-family:Inter,sans-serif; font-size:12px; color:#7f7f7f; flex:none;">6.8 km</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:6px;"><svg viewBox="0 0 24 24" fill="#c42b73" xmlns="http://www.w3.org/2000/svg" style="width:14px; height:14px; flex:none;"><path d="M12 4.2l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1L4.5 9.7l5.2-.8L12 4.2Z" fill="#c42b73"></path></svg><div style="font-family:'General Sans',sans-serif; font-weight:600; font-size:13px; color:#333333;">4.7</div><div style="font-family:Inter,sans-serif; font-size:13px; line-height:19px; color:#7f7f7f;">· Zona Diamante</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px 20px 30px; background:linear-gradient(to top, #fdfcf7 62%, rgba(253,252,247,0));">
+          <div style="height:52px; border-radius:19px; background:{{ ctaBg }}; box-shadow:{{ ctaShadow }}; display:flex; align-items:center; justify-content:center; font-family:'General Sans',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff;">Ver tarifas del evento</div>
+        </div>
+        <div style="position:absolute; bottom:9px; left:50%; transform:translateX(-50%); width:140px; height:5px; border-radius:100px; background:#333333; opacity:0.25;"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1800,&quot;height&quot;:1200},&quot;gradients&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estilo&quot;},&quot;heroTone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Magenta&quot;,&quot;Atardecer&quot;,&quot;Noche&quot;],&quot;default&quot;:&quot;Magenta&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estilo&quot;},&quot;extendedPalette&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estilo&quot;},&quot;showCaptions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Lienzo&quot;}}">class Component extends DCLogic {
+  renderVals() {
+    const p = this.props;
+    const grad = p.gradients ?? true;
+    const tone = p.heroTone ?? "Magenta";
+    const ext = p.extendedPalette ?? true;
+    const tones = {
+      "Magenta": ["#c42b73", "#8f2a6e"],
+      "Atardecer": ["#c4552b", "#c42b73"],
+      "Noche": ["#2f2f31", "#5a2a4b"]
+    };
+    const [a, b] = tones[tone] || tones["Magenta"];
+    return {
+      heroBg: grad ? `linear-gradient(135deg, ${a} 0%, ${b} 100%)` : a,
+      heroShadow: tone === "Noche" ? "0 16px 33px rgba(47,47,49,0.28)" : "0 10px 80px rgba(196,43,115,0.35)",
+      ctaBg: grad ? "linear-gradient(135deg, #c42b73 0%, #a0286c 100%)" : "#c42b73",
+      ctaShadow: "0 10px 80px rgba(196,43,115,0.5)",
+      pillBg: grad ? "linear-gradient(140deg, #d43c80 0%, #a0286c 100%)" : "#c42b73",
+      pillShadow: "0 2px 5px rgba(196,43,115,0.5)",
+      barBg: grad ? "linear-gradient(90deg, #c42b73 0%, #e0568f 100%)" : "#c42b73",
+      glowBg: grad ? "radial-gradient(circle, rgba(196,43,115,0.16) 0%, rgba(196,43,115,0) 70%)" : "transparent",
+      splashBg: grad ? "radial-gradient(120% 80% at 50% 20%, #fff8fb 0%, #ffffff 60%, #f6f5f2 100%)" : "#ffffff",
+      okBg: ext ? "#e6f2ec" : "#fff8fb",
+      okText: ext ? "#2b8c6a" : "#c42b73",
+      warnBg: ext ? "#fbf0e6" : "#e9ebe3",
+      warnText: ext ? "#b0662a" : "#7f7f7f",
+      infoBg: ext ? "#eaf0f7" : "#e9ebe3",
+      infoText: ext ? "#3a5f96" : "#7f7f7f",
+      captionDisplay: (p.showCaptions ?? true) ? "block" : "none"
+    };
+  }
+}</script>
+</body>
+</html>
